@@ -35,21 +35,21 @@ const Layout = ({ children }) => (
             <div class="tile">
             <div>
               <h2>Next Game Night</h2>
-              <h3>March 26</h3>
+              <h3>April 2</h3>
 
             </div>
             </div>
             <div class="tile">
             <div><h2>Title</h2>
-              <h3>Call of Duty: WW2</h3>
+              <h3>Battlefield V</h3>
               <h2>Mode</h2>
-              <p>Zombies! We're gonna be slaying the undead and leaving people behind to get swarmed all night!</p>
+              <p>Firestorm: Survive and Advance!</p>
             
 
             </div>
               </div>
 
-            <img src={withPrefix('/call-of-duty-ww2.png')} />
+            <img src={withPrefix('/bfv-firestorm.jpg')} />
           
           </div>
           </section>
