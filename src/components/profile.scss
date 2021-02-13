@@ -1,0 +1,45 @@
+.profile {
+  align-items: center;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0.5rem;
+
+  * {
+    margin-right: 1rem;
+  }
+
+  + .profile {
+    border-top: 1px solid #666;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.Online::before {
+  display: block;
+  content: "";
+  background: lightgreen;
+  border-radius: 999rem;
+  width: 10px;
+  height: 10px;
+  float: left;
+  margin-top: 0.4rem;
+  margin-right: 0.5rem;
+}
+
+.Offline::before {
+  display: block;
+  content: "";
+  background: grey;
+  border-radius: 999rem;
+  width: 10px;
+  height: 10px;
+  float: left;
+  margin-top: 0.4rem;
+  margin-right: 0.5rem;
+}
