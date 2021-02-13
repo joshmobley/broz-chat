@@ -20,6 +20,21 @@
   align-items: center;
 }
 
+.loader {
+  display: block;
+  border-radius: 999rem;
+  height: 1rem;
+  background: linear-gradient(90deg, #222, #444);
+  background-size: 600% 100%;
+  animation: loading 1s linear infinite;
+  animation-direction: alternate;
+}
+
+.loader.picture {
+  height: 60px;
+  width: 60px;
+}
+
 .Online::before {
   display: block;
   content: "";
@@ -42,4 +57,13 @@
   float: left;
   margin-top: 0.4rem;
   margin-right: 0.5rem;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
