@@ -51,24 +51,25 @@ const Profile = ({ id }) => {
         {picture ? (
           <img
             src={picture}
+            className="loader picture"
             style={{ width: "60px", borderRadius: "999rem" }}
           />
         ) : (
-          <div className="loader picture" />
-        )}
+            <div className="loader picture" />
+          )}
         {name ? (
           <p style={{ width: "200px" }}>{name}</p>
         ) : (
-          <div
-            className="loader"
-            style={{ width: "150px", marginRight: "70px" }}
-          />
-        )}
+            <div
+              className="loader"
+              style={{ width: "150px", marginRight: "70px" }}
+            />
+          )}
         {activity ? (
           <p>{activity}</p>
         ) : (
-          <div className="loader" style={{ width: "150px" }} />
-        )}
+            <div className="loader" style={{ width: "150px" }} />
+          )}
       </div>
       <p className={state}>{state}</p>
     </div>

@@ -67,3 +67,26 @@
     background-position: 100%;
   }
 }
+
+@media screen and (max-width: 800px) {
+
+  .profile {
+    border: 1px solid #333;
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    + .profile {
+      border-top: 1px solid #333;
+    }
+  }
+
+  .profile, .flex {
+    flex-direction: column;
+
+    * {
+      margin-right: 0;
+      margin-bottom: .5rem;
+      text-align: center;
+    }
+  }
+}
