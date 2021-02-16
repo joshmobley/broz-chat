@@ -1,85 +1,77 @@
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 main {
-    background: #111;
-    min-height: 100vh;
-    font-family: "Open Sans", sans-serif;
+  background: #111;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
-    background: linear-gradient( -90deg, #0058FF, #3FDAEF);
-    color: #fff;
-    padding: .5rem 0;
+  color: #fff;
+  padding: 1rem 0;
+  margin: 0 auto;
+  max-width: 1200px;
 
-    h1 {
-        text-indent: -9999rem;
-        background: url('/logo.png') no-repeat 0 0;
-        width: 160px;
-        height: 58px;
-        background-size: contain;
-    }
+  h1 {
+    text-indent: -9999rem;
+    background: url("/logo.png") no-repeat center;
+    height: 58px;
+    background-size: contain;
+    text-align: center;
+  }
 }
 
 .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-column-gap: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 section {
-    padding: 4rem 0;
+  padding: 4rem;
 
-    h2 {
-        font-size: 1rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-bottom: .5rem;
-        color: #999;
-    }
+  h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+  }
 
-    h3 {
-        font-size: 2rem;
-    }
+  h3 {
+    font-size: 2rem;
+  }
 
-    * + h2 {
-        margin-top: 2rem;
-    }
-
-    p {
-        line-height: 1.4rem;
-    }
+  p {
+    line-height: 1.4rem;
+  }
 }
 
 .tile {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
 
-    &:nth-child(2) {
-        grid-column-start: 2;
-        grid-column-end: 4;
-    }
+  &:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
-    .wrapper {
-        grid-template-columns: 100%;
-        max-width: 800px;
-        width: 90%;
-    }
+  .wrapper {
+    grid-template-columns: 100%;
+    max-width: 800px;
+    width: 90%;
+  }
 
-    .tile {
-        grid-column: auto!important;
-        margin-bottom: 2rem;
-    }
+  .tile {
+    grid-column: auto !important;
+    margin-bottom: 2rem;
+  }
 }

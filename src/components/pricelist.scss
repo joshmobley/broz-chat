@@ -1,0 +1,26 @@
+.up {
+    color: green;
+}
+
+.down {
+    color: red;
+}
+
+.pricelist {
+    margin-top: 2rem;
+
+    th, td {
+        padding: .5rem 2rem .5rem 0;
+    }
+
+    th {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+}
